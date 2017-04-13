@@ -1,0 +1,27 @@
+{
+  "name": "travis-ci-webhook",
+  "version": "1.0.0",
+  "description": "Travis CI Webhook Handler/Receiver",
+  "main": "index.js",
+  "repository": "https://github.com/vangie/travis-ci-webhook",
+  "author": "Vangie Du",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "dotenv": "^4.0.0",
+    "file-exists": "^3.0.2",
+    "travisci-webhook-handler": "^2.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "supertest": "^3.0.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node_modules/.bin/mocha --compilers js:babel-register --require babel-polyfill"
+  }
+}
