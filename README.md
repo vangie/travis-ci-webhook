@@ -8,7 +8,7 @@ It is a docker container wrap of [travisci-webhook-handler](https://github.com/c
 ```sh
 docker run -d \
   -p 7777:7777 \
-  -v ${PWD}/scripts://usr/src/app/scripts \
+  -v ${PWD}/scripts:/usr/src/app/scripts \
   -v /var/run/docker.sock:/var/run/docker.sock \
   --name travis-ci-webhook \
   vangie/travis-ci-webhook
